@@ -1,0 +1,44 @@
+{
+  "name": "cerebroapp.com",
+  "description": "Static website for cerebro app",
+  "dev-dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.14.0"
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && NODE_ENV=production webpack -p",
+    "start": "webpack-dev-server --hot --inline --quiet --open"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-core": "^6.20.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.9",
+    "babel-preset-es2015": "^6.18.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.0",
+    "eslint": "^3.12.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-import-resolver-webpack": "^0.7.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "html-webpack-plugin": "^2.24.1",
+    "postcss-loader": "^1.2.0",
+    "postcss-nested": "^1.0.0",
+    "style-loader": "^0.13.1",
+    "sync-request": "^3.0.1",
+    "webpack": "2.1.0-beta.27"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KELiON/cerebroapp.com.git"
+  },
+  "author": "Alexandr Subbotin <kelionweb@gmail.com> (http://asubbotin.ru)",
+  "bugs": {
+    "url": "https://github.com/KELiON/cerebroapp.com/issues"
+  },
+  "homepage": "https://github.com/KELiON/cerebroapp.com#readme"
+}
