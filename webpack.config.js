@@ -6,6 +6,7 @@ const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -68,6 +69,12 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './src/images/*.png', to: './images/[name].[ext]' },
       { from: './src/images/plugins/*.png', to: './images/plugins/[name].[ext]' },
-    ])
+    ]),
+    new CompressionPlugin({
+        asset: "[path].gz[query]",
+        algorithm: "zopfli",
+        test: /\.js$|\.html|\.css$/,
+        minRatio: 0.8
+    })
   ]
 };
