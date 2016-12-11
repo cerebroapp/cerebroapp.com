@@ -12,9 +12,21 @@ const updateText = length => () => {
 
 setTimeout(updateText(1), 100)
 
+// Google analytics: track events
+const trackEvent = (event, label) => {
+  if (event && label && typeof ga !== 'undefined') {
+    ga('send', 'event', 'Landing', event, label)
+  }
+}
+
+// Track clicks
 document.addEventListener('click', ({ target }) => {
   const label = target.getAttribute('data-track')
-  if (label && typeof ga !== 'undefined') {
-    ga('send', 'event', 'Landing', 'click', label)
-  }
+  trackEvent('click', label)
+})
+
+// Track form submits
+document.addEventListener('submit', ({ target }) => {
+  const label = target.getAttribute('data-track-form')
+  trackEvent('submit-form', label)
 })

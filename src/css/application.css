@@ -29,6 +29,10 @@ h2 {
   font-size: 1.5em;
 }
 
+p {
+  line-height: 150%;
+}
+
 .content {
   padding: 0 20px;
   max-width: 1024px;
@@ -42,14 +46,14 @@ h2 {
 }
 
 .main-nav {
-  margin-right: 80px;
+  margin-right: 40px;
   height: 30px;
   float: right;
   li {
     list-style: none;
     display: inline-block;
     line-height: 30px;
-    margin: 0 10px;
+    margin: 0 5px;
   }
   a {
     display: inline-block;
@@ -99,13 +103,16 @@ h2 {
 }
 
 .button {
+  cursor: pointer;
   display: inline-block;
+  white-space: nowrap;
   padding: 5px 10px;
   border: 0;
   background: rgb(64, 120, 192);
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
+  font-size: 1em;
 
   &:active {
     transform: scale(.95);
@@ -138,7 +145,6 @@ h2 {
   margin: 15px auto;
   padding: 15px 0;
   max-width: 800px;
-  line-height: 150%;
   text-align: left;
   &::after {
     content: "";
@@ -167,10 +173,41 @@ h2 {
   }
 }
 
+.donate {
+  text-align: center;
+  position: relative;
+  padding: 15px 0;
+  &::before {
+    content: "";
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #EEE;
+  }
+  .content {
+    max-width: 700px;
+  }
+  .button {
+    font-size: 1.2  em;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+.donate-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .footer {
   background: #000;
   color: white;
   padding-bottom: 50px;
+  margin-top: 50px;
   .content {
     display: flex;
     flex-direction: row;
@@ -243,6 +280,10 @@ h2 {
       text-align: center;
       order: 2;
       margin: 0;
+    }
+    .donate-buttons {
+      flex-direction: column;
+      align-items: center;
     }
     .footer {
       .content {

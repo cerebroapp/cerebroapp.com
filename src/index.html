@@ -13,7 +13,8 @@
     <div class='content'>
       <ul class='main-nav'>
         <li><a href="#download" data-track="header-download">Download</a></li>
-        <li><a href="https://github.com/KELiON/cerebro/releases" data-track="header-changelog">Changelog</a></li>
+        <li><a href="https://github.com/KELiON/cerebro/releases" target="_blank" data-track="header-changelog">Changelog</a></li>
+        <li><a href="#donate" data-track="header-donate">Donate</a></li>
       </ul>
     </div>
   </nav>
@@ -43,7 +44,7 @@
       </div>
       <div class='highlight-content'>
         <h2>See everything</h2>
-        <p>Maps, translations, images, files. Now you don&rsquo;t have to&nbsp;open another application to&nbsp;see what you need.</p>
+        <p>Maps, translations, files. Now you don&rsquo;t have to&nbsp;open another application to&nbsp;see what you need.</p>
         <p>Everything is&nbsp;in&nbsp;one place.</p>
       </div>
     </section>
@@ -67,10 +68,28 @@
         <h2>Open source</h2>
         <p>Cerebro is free and open-source.</p>
         <p><a href="https://github.com/KELiON/cerebro" data-track="opensource-link">Be a part of community</a>: contribute your <br />improvements, suggestions and fixes.</p>
-        <a class="github-button" href="https://github.com/KELiON/cerebro" data-icon="octicon-star" data-style="mega" data-count-href="/KELiON/cerebro/stargazers" data-count-api="/repos/KELiON/cerebro#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star KELiON/cerebro on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/KELiON/cerebro" data-track="opensource-star" data-icon="octicon-star" data-style="mega" data-count-href="/KELiON/cerebro/stargazers" data-count-api="/repos/KELiON/cerebro#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star KELiON/cerebro on GitHub">Star</a>
       </div>
     </section>
   </div>
+
+  <section class='donate'>
+    <div class="content">
+      <h2 id="donate">Donate</h2>
+      <p>Cerebro is free. But you can support developer with your donation: it will help to cover development time and payments for hosting and domain.</p>
+
+      <div class="donate-buttons">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" class="donate-paypal" data-track-form="donate-paypal">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="7NS5EFA5JST8J" />
+          <input type="submit" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate" class="button" value="Donate with paypal" />
+          <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+
+        <a href="bitcoin:1Krbh6oMBXWZ88ikmwiBDrPAKPA6oTnCts" class="button" data-track="donate-bitcoin">Donate with bitcoin</a>
+      </div>
+    </div>
+  </section>
 
   <section class='footer'>
     <div class='content'>
@@ -78,6 +97,7 @@
         <li><h3>Cerebro</h3></li>
         <li><a href="#download" title="Download latest version of Cerebro app" data-track="footer-download">Download</a></li>
         <li><a href="https://github.com/KELiON/cerebro/releases" target="_blank" data-track="footer-releases">Releases</a></li>
+        <li><a href="mailto:hello@cerebroapp.com" target="_blank" data-track="footer-email">Contact Us</a></li>
       </ul>
 
       <ul>
@@ -96,7 +116,7 @@
 
       <div class="newsletter">
         <h3>Newsletter</h3>
-        <form action="//cerebroapp.us14.list-manage.com/subscribe/post?u=dacd677a0b1d22bf238583ffd&amp;id=815093fc81" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form action="//cerebroapp.us14.list-manage.com/subscribe/post?u=dacd677a0b1d22bf238583ffd&amp;id=815093fc81" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate data-track-form="newsletter">
           <input id='newsletter-input' type="email" value="" name="EMAIL" class="required email newsletter-input" placeholder="Enter your email...">
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dacd677a0b1d22bf238583ffd_815093fc81" tabindex="-1" value=""></div>
           <input id='newsletter-submit' type="submit" value="Subscribe" name="subscribe" class="button button__newsletter">
