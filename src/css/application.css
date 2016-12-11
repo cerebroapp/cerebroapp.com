@@ -12,6 +12,9 @@ a {
   color: rgb(64, 120, 192);
   border-bottom: 1px solid rgba(64, 120, 192, 0.3);
   text-decoration: none;
+  &:active {
+    transform: scale(.95);
+  }
 }
 
 h1, h2, h3, h4 {
@@ -122,6 +125,11 @@ p {
     margin: 50px auto;
     padding: 15px 30px;
   }
+}
+
+.button-icon {
+  margin-right: 5px;
+  vertical-align: center;
 }
 
 .highlight-image {
