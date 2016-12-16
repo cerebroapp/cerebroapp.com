@@ -106,6 +106,7 @@ p {
 }
 
 .button {
+  appearance: none;
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
