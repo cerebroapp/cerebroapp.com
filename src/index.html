@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <title>Cerebro App – open-source productivity booster with a brain</title>
+  <meta name="description" content="Cerebro is an open source and free electron-based productivity software alternative to Alfred and Spotlight.">
+  <meta name="keywords" content="cerebro, application, productivity, alfred alternative, spotlight alternative, open source">
   <link href="./<%= htmlWebpackPlugin.files.chunks.styles.css[0] %>" rel="stylesheet" />
 </head>
 <body>
@@ -13,7 +15,7 @@
     </a>
     <div class='content'>
       <ul class='main-nav'>
-        <li><a href="#download" data-track="header-download">Download</a></li>
+        <li><a href="<%= htmlWebpackPlugin.options.download_url %>" data-track="header-download">Download</a></li>
         <li><a href="https://github.com/KELiON/cerebro/releases" target="_blank" data-track="header-changelog">Changelog</a></li>
         <li><a href="#donate" data-track="header-donate">Donate</a></li>
       </ul>
@@ -99,7 +101,7 @@
     <div class='content'>
       <ul>
         <li><h3>Cerebro</h3></li>
-        <li><a href="#download" title="Download latest version of Cerebro app" data-track="footer-download">Download</a></li>
+        <li><a href="<%= htmlWebpackPlugin.options.download_url %>" title="Download latest version of Cerebro app" data-track="footer-download">Download</a></li>
         <li><a href="https://github.com/KELiON/cerebro/releases" target="_blank" data-track="footer-releases">Releases</a></li>
         <li><a href="mailto:hello@cerebroapp.com" target="_blank" data-track="footer-email">Contact Us</a></li>
       </ul>
