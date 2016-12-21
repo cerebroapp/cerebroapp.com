@@ -68,7 +68,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: './src/images/*.png', to: './images/[name].[ext]' },
-      { from: './src/*.txt', to: '.[name].[ext]' },
+      { from: './src/*.txt', to: './[name].[ext]' },
       { from: './src/images/plugins/*.png', to: './images/plugins/[name].[ext]' },
     ]),
     new CompressionPlugin({
