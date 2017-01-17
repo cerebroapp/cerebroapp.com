@@ -19,8 +19,12 @@ const response = request('GET', RELEASES_URL, {
     'user-agent': 'webpack'
   }
 });
-const download_url = JSON.parse(response.body)[0].assets[0].browser_download_url;
-console.log('Latest release download url: ', download_url)
+const download_urls = JSON.parse(response.body)[0].assets.reduce((acc, {browser_download_url}) => {
+  const extension = browser_download_url.match(/\.([^\.]+)$/i)[1]
+  acc[extension] = browser_download_url
+  return acc
+}, {});
+console.log('Latest release download urls: ', download_urls)
 
 // Added google analytics script only in prod
 const analytics = isProd ? fs.readFileSync('./src/html/analytics.html') : '';
@@ -60,7 +64,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin(isProd ? '[name].[contenthash].css' : '[name].css'),
     new HtmlWebpackPlugin({
-      download_url,
+      download_urls,
       analytics,
       template: 'src/index.html',
       filename: 'index.html',
