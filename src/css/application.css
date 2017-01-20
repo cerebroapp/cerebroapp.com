@@ -9,8 +9,8 @@ html, body {
 }
 
 a {
-  color: rgb(64, 120, 192);
-  border-bottom: 1px solid rgba(64, 120, 192, 0.3);
+  color: rgb(69, 50, 120);
+  border-bottom: 1px solid rgba(69, 50, 120, 0.3);
   text-decoration: none;
   &:active {
     transform: scale(.95);
@@ -46,6 +46,15 @@ p {
   content: "";
   display: block;
   clear: both;
+}
+
+.header-logo {
+  border: 0;
+  display: inline-block;
+  margin: 10px 0;
+}
+.header-logo > img {
+  height: 60px;
 }
 
 .main-nav {
@@ -112,7 +121,7 @@ p {
   white-space: nowrap;
   padding: 5px 10px;
   border: 0;
-  background: rgb(64, 120, 192);
+  background: rgb(69, 50, 120);
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
