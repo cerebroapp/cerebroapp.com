@@ -73,7 +73,8 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './src/images/*.png', to: './images/[name].[ext]' },
       { from: './src/*.txt', to: './[name].[ext]' },
-      { from: './src/images/plugins/*.png', to: './images/plugins/[name].[ext]' },
+      { from: './src/favicon.ico', to: './favicon.ico' },
+      { from: './src/images/favicon/*', to: './images/favicon/[name].[ext]' },
     ]),
     new CompressionPlugin({
         asset: "[path].gz[query]",
