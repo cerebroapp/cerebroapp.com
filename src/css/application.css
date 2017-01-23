@@ -48,13 +48,13 @@ p {
   clear: both;
 }
 
-.header-logo {
+.logo {
   border: 0;
   display: inline-block;
   margin: 10px 0;
 }
-.header-logo > img {
-  height: 60px;
+.logo > img {
+  height: 120px;
 }
 
 .main-nav {
