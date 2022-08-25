@@ -2,13 +2,13 @@
 
 The old cerebroapp website has been migrated to nextjs.
 Now we have:
+
 - [x] Updated download links (no need to rebuild the site to get updated ones)
 - [x] Buttons show the latest version of the package that has been published (they may differ if a package is not published for a platform)
   
   ![image](https://user-images.githubusercontent.com/77246331/181510875-4e2da373-1a40-4608-a3d3-8f1dc55db95a.png)
 
 - [x] Removed old links
-
 
 ## Development
 
