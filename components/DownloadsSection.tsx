@@ -2,7 +2,7 @@ import { Links } from "../services/getReleasesLinks";
 import DownloadButton from "./DownloadButton";
 
 const DownloadsSection = ({ links }: { links: Links }) => {
-  const { AppImage, deb, exe } = links;
+  const { dmg, deb, exe } = links;
   return (
     <section
       className="text-center space-x-2 space-y-3 my-14 mx-auto"
@@ -16,9 +16,9 @@ const DownloadsSection = ({ links }: { links: Links }) => {
           extension="exe"
         />
       )}
-      {AppImage && (
+      {dmg && (
         <DownloadButton
-          link={AppImage}
+          link={dmg}
           title="Download for Mac"
           img="/images/icons/mac.svg"
           extension="dmg"
