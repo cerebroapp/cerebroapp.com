@@ -7,6 +7,7 @@ const SearchBar = () => {
       <Typed
         strings={["Cerebro - Productivity booster with a brain..."]}
         typeSpeed={50}
+        className="text-xl sm:text-2xl"
       />
     </div>
   );
