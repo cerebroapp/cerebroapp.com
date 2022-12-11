@@ -8,9 +8,6 @@ const NavBar = () => {
       <div className="py-0 pr-5">
         <ul className="my-[30px] mr-8 float-right">
           <li className={liStyle}>
-            <Link href="#download">Download</Link>
-          </li>
-          <li className={liStyle}>
             <Link href="https://github.com/cerebroapp/cerebro/releases">
               Changelog
             </Link>

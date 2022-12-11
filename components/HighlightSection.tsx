@@ -49,7 +49,7 @@ const Section = () => (
       <p>Cerebro is free and open-source.</p>
       <p>
         <a
-          href="https://github.com/KELiON/cerebro"
+          href="https://github.com/cerebroapp"
           data-track="opensource-link"
         >
           Be a part of community
