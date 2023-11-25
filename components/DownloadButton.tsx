@@ -13,7 +13,7 @@ const DownloadButton = ({ link, title, img, extension }: ButtonProps) => {
     <a
       href={link[0]}
       download={`Cerebro.${extension}`}
-      className="appearance-none cursor-pointer inline-block whitespace-nowrap py-3 px-8 border-none bg-[#453278] rounded-md text-lg text-white active:scale-95"
+      className="appearance-none cursor-pointer inline-block whitespace-nowrap py-3 px-8 mr-4 border-none bg-[#453278] rounded-md text-lg text-white active:scale-95"
       title={title}
     >
       <Image src={img} width={15} height={15} alt={title + " image"} /> {title}
