@@ -25,7 +25,7 @@ const HeroSection = ({ links }: { links: Links }) => {
 
         </div>
       </div>
-      <section className='text-center space-x-2 mt-10' id='download'>
+      <section className='text-center space-y-2 mt-8' id='download'>
         {exe && (
           <DownloadButton
             link={exe}
@@ -43,14 +43,17 @@ const HeroSection = ({ links }: { links: Links }) => {
           />
         )}
         {deb && (
-          <DownloadButton
-            link={deb}
-            title='Download for Linux'
-            img='/images/icons/linux.svg'
-            extension='AppImage'
-          />
+          <div className='md:mt-5'>
+            <DownloadButton
+              link={deb}
+              title='Download for Linux'
+              img='/images/icons/linux.svg'
+              extension='AppImage'
+            />
+          </div>
         )}
       </section>
+
     </div>
   )
 }
